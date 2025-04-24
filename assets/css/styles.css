@@ -1,11 +1,11 @@
 /* ===== VARIABLES ===== */
 :root {
   /* Paleta de colores inspirada en Adobe Color */
-  --color-primary: #3498db;       /* Azul principal */
-  --color-secondary: #2ecc71;     /* Verde secundario */
-  --color-accent: #e74c3c;        /* Rojo acento */
-  --color-dark: #2c3e50;          /* Azul oscuro */
-  --color-light: #ecf0f1;         /* Gris claro */
+  --color-primary: #3C2F80;       /* Azul principal */
+  --color-secondary: #26B6C6;     /* Verde secundario */
+  --color-accent: #6ACFC9;        /* Rojo acento */
+  --color-dark: #AEE8CA;          /* Azul oscuro */
+  --color-light: #FAEDDA;         /* Gris claro */
   
   /* Variaciones de colores */
   --color-primary-light: #5dade2;
