@@ -76,6 +76,11 @@
     margin-left: 0;
 }
 
+/* Hero Variant 4: Gradient Background */
+.hero--gradient {
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-dark) 100%);
+}
+
 /* Base Footer Styles */
 .footer {
     background-color: var(--color-dark-light);
