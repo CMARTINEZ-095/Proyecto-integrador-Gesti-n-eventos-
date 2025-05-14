@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schoolmeet</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/registro.css">
+</head>
+<body>
+    <header class="header header--dark">
+        <div class="header__container">
+            <h1 class="header__logo">Schoolmeet</h1>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Inicio</a></li>
+                    <li class="nav__item"><a href="acercade.html" class="nav__link">Acerca de</a></li>
+                    <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+                    <li class="nav__item"><a href="iniciarsesion.html" class="nav__link">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <form class="form form--boxed">
+        <div class="form__container">
+            <h2 class="form__title">Registrate aqui</h2>
+            <p class="form__description">Completa todos los campos</p>
+            
+            <div class="form__group">
+                <label for="name-2" class="form__label">Nombres</label>
+                <input type="text" id="name-2" class="form__input" placeholder="Tu nombre"required>
+                <label for="name-2" class="form__label">Apellidos</label>
+                <input type="text" id="name-2" class="form__input" placeholder="Tu apellido"required>
+                <label for="name-2" class="form__label">Telefono</label>
+                <input type="text" id="telefono" class="form__input" placeholder="Tu telefono"required>
+                <label for="name-2" class="form__label">Tipo de usuario</label>
+                <select id="tipo-usuario" class="form__input">
+                    <option value="estudiante">Estudiante</option>
+                    <option value="profesor">Profesor</option>
+                    <option value="administrador">Administrador</option>
+                </select>
+                <label for="name-2" class="form__label">Tipo de documento</label>   
+                <select id="tipo-documento" class="form__input">
+                    <option value="cedula">Cédula</option>
+                    <option value="tarjeta">Tarjeta de identidad</option>
+                    <option value="pasaporte">Pasaporte</option>
+                    <option value="nuit">NIT</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <label for="name-2" class="form__label">Número de documento</label>     
+                <input type="text" id="documento" class="form__input" placeholder="Tu documento"required>
+                <label for="name-2" class="form__label">Fecha de nacimiento</label>     
+                <input type="date" id="fecha-nacimiento" class="form__input" placeholder="Tu fecha de nacimiento"required>
+                <label for="name-2" class="form__label">Dirección</label>       
+                <input type="text" id="direccion" class="form__input" placeholder="Tu dirección"required>
+                <label for="name-2" class="form__label">Ciudad</label>
+                <input type="text" id="ciudad" class="form__input" placeholder="Tu ciudad"required>
+                <label for="name-2" class="form__label">Institución</label> 
+                <input type="text" id="institucion" class="form__input" placeholder="Tu institución"required>   
+                <label for="name-2" class="form__label">Tipo de institución</label> 
+                <select id="tipo-institucion" class="form__input">
+                    <option value="colegio">Colegio</option>
+                    <option value="universidad">Universidad</option>
+                    <option value="instituto">Instituto</option>
+                    <option value="otro">Otro</option>  
+                </select>      
+            </div>
+            
+            <div class="form__group">
+                <label for="email-2" class="form__label">Correo electrónico</label>
+                <input type="email" id="email-2" class="form__input" placeholder="tu@email.com">
+            </div>
+            <label for="name-2" class="form__label">Contraseña</label>
+                <input type="password" id="password" class="form__input" placeholder="************"required>
+                <label for="name-2" class="form__label">Confirmar contraseña</label>
+                <input type="password" id="password" class="form__input" placeholder="************"required>
+            
+            <button type="submit" class="form__button">Registrarse</button>
+        </div>
+    </form>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__info">
+                <h2 class="footer__logo">Schoolmeet</h2>
+                <p class="footer__text">Ofrecemos una gestión de eventos innovadora para ayudar a gestionar lo que
+                    tengas en mente y destaques en el mercado actual.</p>
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <div class="footer__links">
+                <h3 class="footer__heading">Enlaces rápidos</h3>
+                <ul class="footer__nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="acercade.html">Acerca de</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="iniciarsesion.html">Iniciar sesión</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__contact">
+                <h3 class="footer__heading">Contacto</h3>
+                <address>
+                    <p>Calle Principal Avenida 14 #68-23</p>
+                    <p>Medellín, colombia</p>
+                    <p>Email: Gestiondeeventos@eve.com</p>
+                    <p>Teléfono: 381 838 3287</p>
+                </address>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2025 Schoolmeet. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
