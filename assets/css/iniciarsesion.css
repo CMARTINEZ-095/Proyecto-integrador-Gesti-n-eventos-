@@ -1,0 +1,17 @@
+
+.form--inline .form__group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.form--inline .form__label {
+    flex: 0 0 100px;
+    margin-bottom: 0;
+}
+
+.form--inline .form__input,
+.form--inline .form__textarea {
+    flex: 1;
+}
