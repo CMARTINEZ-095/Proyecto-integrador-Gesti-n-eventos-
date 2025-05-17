@@ -1,15 +1,15 @@
 /* ===== VARIABLES ===== */
 :root {
   /* Paleta de colores inspirada en Adobe Color */
-  --color-primary: #dccbcb;       /* Azul principal */
-  --color-secondary: #24393b;     /* Verde secundario */
-  --color-accent: #fdfdfd;        /* Rojo acento */
-  --color-dark: #6a4eaf;          /* Azul oscuro */
-  --color-light: #FAEDDA;         /* Gris claro */
+  --color-primary: #777f90;       /* Azul principal */
+  --color-secondary: #2f2828;     /* Verde secundario */
+  --color-accent: #8b4646;        /* Rojo acento */
+  --color-dark: #4b389d;          /* Azul oscuro */
+  --color-light: #4b389d;          /* Gris claro */
   
   /* Variaciones de colores */
   --color-primary-light: #000000;
-  --color-primary-dark: #010304;
+  --color-primary-dark: #469c37;
   --color-secondary-light: #030604;
   --color-secondary-dark: #27ae60;
   --color-accent-light: #ec7063;
@@ -18,8 +18,8 @@
   --color-light-dark: #bdc3c7;
   
   /* Colores de texto */
-  --text-dark: #333333;
-  --text-medium: #666666;
+  --text-dark: #020000;
+  --text-medium: #000000;
   --text-light: #999999;
   --text-white: #ffffff;
   
