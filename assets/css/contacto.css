@@ -1,0 +1,96 @@
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form__container {
+    padding: var(--spacing-lg);
+}
+
+.form__title {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-md);
+    color: var(--text-dark);
+}
+
+.form__description {
+    font-size: var(--font-size-md);
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-medium);
+}
+
+.form__group {
+    margin-bottom: var(--spacing-md);
+}
+
+.form__label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+.form__input,
+.form__textarea {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: var(--border-width) solid var(--color-light-dark);
+    border-radius: var(--border-radius-sm);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-md);
+    transition: border-color var(--transition-fast);
+}
+
+.form__input:focus,
+.form__textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.form__textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form__button__registrarse {
+    display: inline-block;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background-color:rgb(39, 203, 39);
+    color: var(--text-white);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-size-md);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+}
+
+.form__button__registrarse:hover {
+    background-color:rgb(15, 117, 15);
+}
+.form--floating .form__group {
+    position: relative;
+}
+
+.form--floating .form__input,
+.form--floating .form__textarea {
+    padding: var(--spacing-md) var(--spacing-sm) var(--spacing-xs);
+}
+
+.form--floating .form__label {
+    position: absolute;
+    top: var(--spacing-sm);
+    left: var(--spacing-sm);
+    transition: all var(--transition-fast);
+    pointer-events: none;
+}
+
+.form--floating .form__input:focus + .form__label,
+.form--floating .form__textarea:focus + .form__label,
+.form--floating .form__input:not(:placeholder-shown) + .form__label,
+.form--floating .form__textarea:not(:placeholder-shown) + .form__label {
+    top: 5px;
+    font-size: var(--font-size-xs);
+    color: var(--color-primary);
+}
