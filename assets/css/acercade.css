@@ -1,4 +1,4 @@
-/* About Section */
+
 .about {
   padding: var(--spacing-xxl) 0;
 }
@@ -42,7 +42,6 @@
   display: block;
 }
 
-/* Mission Section */
 .mission {
   padding: var(--spacing-xxl) 0;
   background-color: var(--color-light);
@@ -93,7 +92,6 @@
   font-weight: bold;
 }
 
-/* Team Section */
 .team {
   padding: var(--spacing-xxl) 0;
   background-color: var(--color-light);
@@ -142,16 +140,16 @@
 }
 
 .team-member__image-placeholder {
-    width: 150px; /* Ajusta el tamaño del círculo según necesites */
-    height: 150px; /* Debe ser igual al ancho para ser un círculo */
-    border-radius: 50%; /* Esto crea la forma circular */
-    overflow: hidden; /* Recorta cualquier parte de la imagen que se salga del círculo */
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    overflow: hidden; 
 }
 
 .team-member__image-placeholder img {
-    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
-    height: 100%; /* La imagen ocupa toda la altura del contenedor */
-    object-fit: cover; /* Escala la imagen manteniendo su relación de aspecto y la recorta si es necesario para cubrir el contenedor */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
 }
 
 .team-member__name {

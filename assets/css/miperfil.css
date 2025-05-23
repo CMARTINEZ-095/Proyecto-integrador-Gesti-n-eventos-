@@ -1,4 +1,4 @@
-/* Barra de movimiento */
+
 body {
 margin: 0;
 padding: 0;
@@ -32,7 +32,7 @@ color: #ffffff;
 font-weight: 500;
 }
 
-/* Animación continua sin saltos */
+
 @keyframes scroll {
 0% {
     transform: translateX(0%);
@@ -41,10 +41,10 @@ font-weight: 500;
     transform: translateX(-50%);
 }
 }
-/* Fin de barra de movimiento */
 
 
-/* Animación continua */
+
+
 @keyframes desplazamiento {
 0% {
     transform: translateX(0);
@@ -55,7 +55,7 @@ font-weight: 500;
 }
 
 
-/* Animación */
+
 @keyframes desplazamiento {
 0% {
     transform: translateX(100%);
@@ -73,12 +73,14 @@ font-weight: 500;
     font-family: sans-serif;
 }
 
-.div_section {
+.cards-container {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap; 
+    gap: 20px;
     justify-content: center;
-    min-height: 100vh;
+    padding: 20px;
 }
+
 
 .card {
     position: relative;
