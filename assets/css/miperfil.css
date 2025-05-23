@@ -75,9 +75,15 @@ font-weight: 500;
 
 .cards-container {
     display: flex;
+<<<<<<< HEAD
     flex-wrap: wrap; 
     gap: 20px;
     justify-content: center;
+=======
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+>>>>>>> fc6fdf1c0266bd01a770b4a9f18d489852ec65e5
     padding: 20px;
 }
 
