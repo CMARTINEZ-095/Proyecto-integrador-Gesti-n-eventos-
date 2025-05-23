@@ -75,9 +75,10 @@ font-weight: 500;
 
 .div_section {
     display: flex;
-    align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
 }
 
 .card {
