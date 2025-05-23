@@ -1,66 +1,53 @@
-# 📘 Sistema de Gestión de Eventos Escolares
+# 🎓 Schoolmeet — Sistema de Gestión de Eventos Escolares
 
-## 📝 Descripción General
+## 📌 Descripción General
 
-Este proyecto consiste en una plataforma web donde los estudiantes pueden visualizar los eventos organizados por su escuela. La plataforma permite ver información relevante de cada evento, incluyendo:
+**Schoolmeet** es una plataforma web que centraliza y facilita la gestión de eventos dentro de una institución educativa. Permite a los estudiantes conocer, calificar, comentar y guardar sus eventos favoritos, todo desde una interfaz moderna y accesible.
 
-- Cantidad de asistentes
-- Disponibilidad (si el evento está lleno o no)
-- Calificación y comentarios de otros usuarios
-- Material gráfico de los eventos
-- Notificaciones personalizadas
-- Posibilidad de marcar eventos como favoritos
-
-Esta herramienta mejora la experiencia estudiantil al facilitar el acceso a la información y promover la participación en actividades escolares, ayudando también a identificar cuáles son los eventos más destacados.
+Este sistema busca fortalecer la participación estudiantil, mejorar la comunicación de eventos escolares y permitir una interacción activa con el contenido.
 
 ---
 
 ## 🎯 Objetivos del Proyecto
 
 ### Objetivo General
-Unificar la información de los eventos escolares en una sola plataforma accesible para todos los estudiantes inscritos.
+Desarrollar una herramienta digital funcional que permita a los estudiantes visualizar, interactuar y mantenerse informados sobre los eventos escolares de su institución.
 
 ### Objetivos Específicos
-- Permitir a los estudiantes visualizar todos los eventos disponibles.
-- Brindar acceso a detalles como cantidad de asistentes y calificaciones.
-- Facilitar la interacción mediante comentarios y favoritos.
-- Notificar a los usuarios sobre eventos importantes.
+- Mostrar una lista clara de eventos con su información detallada.
+- Permitir que los usuarios reserven su lugar y vean si un evento está lleno.
+- Integrar un sistema de calificaciones y comentarios.
+- Activar notificaciones para mantener informados a los estudiantes.
+- Permitir añadir eventos a favoritos para un seguimiento personalizado.
+- Presentar contenido visual como imágenes o videos de eventos.
 
 ---
 
-## 🛠️ Tecnologías y Herramientas Utilizadas
+## ✨ Características Principales
 
-- HTML
-- CSS
-
----
-
-## 💻 Requisitos del Sistema
-
-- Estar inscrito oficialmente en la institución educativa.
-- Contar con un correo institucional y una contraseña única.
+- 🗓️ **Visualización de eventos** disponibles.
+- 🔔 **Sistema de notificaciones** para eventos nuevos o cambios.
+- ⭐ **Añadir eventos a favoritos**.
+- 💬 **Comentarios y calificaciones** de los asistentes.
+- 📷 **Galería visual** por evento (fotos, afiches, etc.).
+- 📈 **Estadísticas visibles** como número de inscritos y ranking por popularidad.
 
 ---
 
-## 🧭 Instrucciones de Uso
+## 🛠️ Tecnologías Utilizadas
 
-1. Inscribirse en la plataforma utilizando el correo institucional.
-2. Iniciar sesión con los datos registrados.
-3. Una vez dentro, el usuario puede explorar, interactuar y gestionar los eventos por su cuenta.
-
----
-
-## 👥 Autores
-
-- **Juan Sebastián Herrera Ochoa**
-- **Estiben Arley Manco Suárez**
-- **Carlos Andrés Martínez Carvajal**
+- **HTML5**
+- **CSS**
 
 ---
 
-## 📄 Licencia
+## 🗂️ Estructura del Proyecto
 
-Este proyecto ha sido desarrollado como parte de un **Proyecto Integrador** con fines educativos.
-
----
-
+```plaintext
+PROYECTO-INTEGRADOR-G...
+├── assets/
+│   ├── css/
+│   └── images/
+├── pages/
+├── index.html
+└── README.md
