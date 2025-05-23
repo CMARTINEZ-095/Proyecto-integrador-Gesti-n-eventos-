@@ -125,7 +125,7 @@
         opacity: 1;
     }
 
-    /* Estilos específicos para los enlaces de navegación */
+
     .carousel-navigation a.prev {
         order: 1;
     }
@@ -134,7 +134,7 @@
         order: 2;
     }
 
-    /* Estilos para "apuntar" a cada slide */
+
     .carousel-slide-no-js > div:nth-child(1) {
         scroll-snap-align: start;
     }

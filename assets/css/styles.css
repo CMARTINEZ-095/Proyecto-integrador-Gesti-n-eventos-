@@ -65,7 +65,7 @@
   --container-padding: var(--spacing-md);
 }
 
-/* ===== RESET ===== */
+
 * {
   margin: 0;
   padding: 0;
@@ -109,7 +109,7 @@ button, input, textarea, select {
   font: inherit;
 }
 
-/* ===== UTILIDADES ===== */
+
 .container {
   width: 100%;
   max-width: var(--container-max-width);
@@ -117,7 +117,7 @@ button, input, textarea, select {
   padding: 0 var(--container-padding);
 }
 
-/* ===== TIPOGRAFÍA ===== */
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-heading);
   font-weight: 700;
@@ -154,7 +154,7 @@ p {
   margin-bottom: var(--spacing-md);
 }
 
-/* ===== HEADER ===== */
+
 .header {
   background-color: var(--text-white);
   box-shadow: var(--shadow-sm);
@@ -214,7 +214,6 @@ p {
   background-color: var(--color-primary);
 }
 
-/* Header Variant 1: Dark Background */
 .header--dark {
     background-color: var(--color-dark);
     color: var(--text-white);
@@ -236,7 +235,6 @@ p {
     color: var(--color-primary-light);
 }
 
-/* Base Hero Styles */
 .hero {
     width: 100%;
     padding: var(--spacing-xxl) 0;
@@ -282,12 +280,12 @@ p {
 }
 
 
-/* Hero Variant 4: Gradient Background */
+
 .hero--gradient {
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
 }
 
-/* ===== FOOTER ===== */
+
 .footer {
   background-color: var(--color-dark);
   color: var(--text-white);
