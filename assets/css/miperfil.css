@@ -48,6 +48,10 @@ body {
   }
 }
 
+.title_myprofile{
+text-align: center;
+}
+
 /* Tarjetas */
 .cards-container {
   display: flex;
@@ -61,7 +65,6 @@ body {
   position: relative;
   width: 300px;
   height: 350px;
-  perspective: 1000px;
 }
 
 .card .face {
@@ -113,6 +116,7 @@ body {
   font-size: 30px;
   margin-top: 20px;
   letter-spacing: 2px;
+  color: #f3f3f3;
 }
 
 .card .back p {
