@@ -34,7 +34,7 @@
                 universidades, colegios y entre otras...</p>
         </div>
     </section>
-
+    
     <!-- Sección de carrusel -->
     <section class="carousel-section">
         <div class="carousel-container-no-js">
@@ -65,7 +65,7 @@
         }
         setInterval(autoScrollCarousel, 4000);
     </script>
-
+    
     <!-- Sección de contacto -->
     <section class="cta">
         <div class="cta__container">
@@ -74,6 +74,35 @@
             <a href="pages/contacto.html" class="cta__button">Contáctanos</a>
         </div>
     </section>
+
+ <!--iconos redes sociales-->
+ <div class="icon-buttons">
+    <div class="icon-column">
+        <img src="../assets/images/icono_redessociales.png" alt="Principal" class="icon" onclick="toggleSubmenu()">
+        <div id="submenu" class="submenu">
+            <a href="https://www.facebook.com/?locale=es_LA">
+                <img src="../assets/images/icono_facebook.png" alt="Sub 1" class="icon">
+            </a>
+            <a href="https://www.youtube.com/?app=desktop&hl=es">
+                <img src="../assets/images/icono_youtube.png" alt="Sub 2" class="icon">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="../assets/images/icono_instagram.png" alt="Sub 3" class="icon">
+            </a>
+        </div>
+    </div>
+    <div>
+        <a href="https://api.whatsapp.com/send?phone=+573207653412">
+            <img src="../assets/images/whatsapp_icon.png" alt="whatsapp" class="icon">
+        </a>
+    </div>
+</div>
+<script>
+    function toggleSubmenu() {
+        const submenu = document.getElementById("submenu");
+        submenu.classList.toggle("active");
+    }
+</script>
 
     <!-- Footer -->
     <footer class="footer">
