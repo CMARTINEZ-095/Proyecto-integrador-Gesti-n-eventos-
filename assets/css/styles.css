@@ -414,7 +414,7 @@ p {
     text-decoration: none !important;
 }
 
-<<<<<<< HEAD
+
 .icon-buttons{
   position:fixed;
   right: 5px;
@@ -435,7 +435,7 @@ flex-direction: column;
   bottom: 20px;
   right: 20px;
   display: flex;
-  flex-direction: column-reverse; /* Principal abajo, submenú arriba */
+  flex-direction: column-reverse; 
   align-items: center;
   gap: 10px;
 }
@@ -451,11 +451,6 @@ flex-direction: column;
 .submenu.active {
   display: flex;
 }
-
-=======
-
-
->>>>>>> f07802851e6683f02daec93e1c0efc862618139a
 
 /* ===== MEDIA QUERIES ===== */
 @media (max-width: 768px) {
