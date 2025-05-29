@@ -94,3 +94,64 @@
     font-size: var(--font-size-xs);
     color: var(--color-primary);
 }
+
+.mapa {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--color-light);
+    text-align: center;
+}
+
+.mapa__titulo {
+    font-size: var(--font-size-xl);
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-md);
+}
+
+.mapa__contenedor {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.reseñas {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--color-light);
+    text-align: center;
+}
+
+.reseñas__titulo {
+    font-size: var(--font-size-xl);
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-md);
+}
+
+.reseña {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reseña__comentario {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.8rem;
+    font-style: italic;
+}
+
+.reseña__usuario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.reseña__estrellas {
+    color: #ffc107; 
+}
+

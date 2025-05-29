@@ -1,7 +1,7 @@
 
 .carousel-section {
         padding: 20px 0;
-        background-color: #866697;
+        background-color: var(--color-light);
         display: flex;
         justify-content: center;
     }

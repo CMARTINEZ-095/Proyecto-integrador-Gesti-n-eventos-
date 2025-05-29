@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/contacto.css">
     <link rel="icon" href="../assets/images/icon.png">
+    <link rel="stylesheet" href="../assets/css/animaciones.css">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
                 <ul class="nav__list">
                     <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
                     <li class="nav__item"><a href="acercade.html" class="nav__link">Acerca de</a></li>
-                    <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+                    <li class="nav__item"><a href="contacto.html" class="nav__link active">Contacto</a></li>
                     <li class="nav__item"><a href="iniciarsesion.html" class="nav__link">Iniciar sesión</a></li>
                 </ul>
             </nav>
@@ -28,8 +29,8 @@
 
     <section class="hero hero--gradient">
         <div class="hero__container">
-            <h2 class="hero__title">Nuestro interés</h2>
-            <p class="hero__text">Para nosotros, como empresa, es importante conocer las quejas y solicitudes de
+            <h2 class="form__title animate-welcome">Nuestro interés</h2>
+            <p class="hero__text animate-text">Para nosotros, como empresa, es importante conocer las quejas y solicitudes de
                 nuestros clientes. Por eso, hemos creado este apartado, en el que podrás encontrar las formas en las que
                 puedes comunicarte con nosotros y darnos a conocer tus reclamos, dudas y sugerencias.
                 <br>
@@ -67,6 +68,55 @@
         </form>
     </div>
     <br>
+   
+<section class="mapa">
+    <h2 class="mapa__titulo">Nuestra ubicación - Medellín</h2>
+    <div class="mapa__contenedor">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15957.371837237024!2d-75.579954!3d6.244203!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428a2e9f738b3%3A0xa25bcffdf1a9bb99!2sMedell%C3%ADn%2C%20Antioquia%2C%20Colombia!5e0!3m2!1ses!2sco!4v1716929500000!5m2!1ses!2sco"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+
+<section class="reseñas">
+    <h2 class="reseñas__titulo">Lo que dicen nuestros usuarios</h2>
+
+    <div class="reseña">
+        <p class="reseña__comentario">"Excelente atención y ubicación. Muy recomendado."</p>
+        <div class="reseña__usuario">
+            <span class="reseña__nombre">Juan Pérez</span>
+            <div class="reseña__estrellas">
+                ⭐⭐⭐⭐⭐
+            </div>
+        </div>
+    </div>
+
+    <div class="reseña">
+        <p class="reseña__comentario">"Todo muy bien, aunque podría mejorar un poco el acceso."</p>
+        <div class="reseña__usuario">
+            <span class="reseña__nombre">Laura Gómez</span>
+            <div class="reseña__estrellas">
+                ⭐⭐⭐⭐☆
+            </div>
+        </div>
+    </div>
+
+    <div class="reseña">
+        <p class="reseña__comentario">"Muy buena experiencia. Volvería sin duda."</p>
+        <div class="reseña__usuario">
+            <span class="reseña__nombre">Carlos Ramírez</span>
+            <div class="reseña__estrellas">
+                ⭐⭐⭐⭐⭐
+            </div>
+        </div>
+    </div>
+</section>
 
     <section>
         <div>
@@ -90,7 +140,7 @@
                 <ul class="footer__nav">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="acercade.html">Acerca de</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
                     <li><a href="iniciarsesion.html">Iniciar sesión</a></li>
                 </ul>
             </div>

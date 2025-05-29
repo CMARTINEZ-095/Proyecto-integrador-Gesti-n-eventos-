@@ -74,8 +74,7 @@
 }
 
 .mission__subtitle {
-  color: var(--color-primary);
-  margin-bottom: var(--spacing-md);
+  color: #794daf;
 }
 
 .mission__text {
@@ -157,7 +156,7 @@
 }
 
 .team-member__position {
-  color: var(--color-primary);
+  color: #794daf;
   font-weight: 600;
   margin-bottom: var(--spacing-sm);
 }
@@ -165,4 +164,16 @@
 .team-member__bio {
   color: var(--text-medium);
   font-size: var(--font-size-sm);
+}
+
+/* Animación de zoom al pasar el cursor */
+.mission__item,
+.team-member {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission__item:hover,
+.team-member:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
