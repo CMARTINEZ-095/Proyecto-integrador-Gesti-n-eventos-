@@ -94,3 +94,95 @@
     font-size: var(--font-size-xs);
     color: var(--color-primary);
 }
+
+.mapa {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--color-light);
+    text-align: center;
+}
+
+.mapa__titulo {
+    font-size: var(--font-size-xl);
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-md);
+}
+
+.mapa__contenedor {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.reseñas {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--color-light);
+    text-align: center; /* Centra el título y todos los textos */
+}
+
+.reseñas {
+  padding: var(--spacing-xxl, 4rem) 1rem;
+  background-color: var(--color-light, #f9f9f9);
+  text-align: center;
+}
+
+.reseñas__titulo {
+  font-size: var(--font-size-xl, 2rem);
+  color: var(--text-dark, #333);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.reseñas__contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.reseñas__columna {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.reseña {
+  border-left: 6px solid var(--color-primary, #007bff);
+  background-color: #fff;
+  padding: 1.5rem;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.reseña:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.reseña__comentario {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 1rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.reseña__usuario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.reseña__estrellas {
+  color: #ffc107;
+  font-size: 1.1rem;
+}
+
