@@ -44,9 +44,41 @@
         </div>
     </header>
 
+    <!-- Sección de carrusel -->
+    <section class="carousel-section">
+        <div class="carousel-container-no-js">
+            <div class="carousel-slide-no-js" id="autoCarousel">
+                <div class="carousel-item"><img src="../assets/images/CONCURSO 1.jpg" alt="Imagen 1" class="carousel-image">
+                </div>
+                <div class="carousel-item"><img src="../assets/images/desarrollo web.jpg" alt="Imagen 2" class="carousel-image">
+                </div>
+                <div class="carousel-item"><img src="../assets/images/Reunión 1.jpg" alt="Imagen 3" class="carousel-image">
+                </div>
+                <div class="carousel-item"><img src="../assets/images/competencia diseño.jpg" alt="Imagen 4" class="carousel-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script para carrusel automático -->
+    <script>
+        const carousel = document.getElementById('autoCarousel');
+        const items = carousel.querySelectorAll('.carousel-item');
+        let index = 0;
+        function autoScrollCarousel() {
+            index = (index + 1) % items.length;
+            carousel.scrollTo({
+                left: items[index].offsetLeft,
+                behavior: 'smooth'
+            });
+        }
+        setInterval(autoScrollCarousel, 4000);
+    </script>
+
     <!-- Sección de tarjetas -->
+    <br>
     <section>
-        <h2 class="title_myprofile">Actividades Realizadas</h2>
+        <h2 class="title_myprofile">EVENTOS</h2>
         <div class="cards-container">
 
             <div class="card">

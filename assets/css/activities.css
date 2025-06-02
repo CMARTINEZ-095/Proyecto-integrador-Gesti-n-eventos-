@@ -1,3 +1,24 @@
+/* Botón grande (Call to Action) */
+.btn-cta-centered {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 20px 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn-cta-centered:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
 /* Barra de movimiento */
 body {
     margin: 0;
