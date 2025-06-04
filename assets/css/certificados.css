@@ -12,13 +12,23 @@
   overflow-x: auto;
   max-width: 100%;
 }
-.eventos-imagenes--ajustada img {
-  width: 120px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px #c423d9;
-  object-fit: cover;
-  max-width: 100%;
-  height: 90px;
+.eventos-imagenes.eventos-imagenes--ajustada img {
+  max-width: 180px;
+  max-height: 180px;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  margin: 10px 12px 18px 12px;
+  box-shadow: 0 2px 12px #c423d93a;
+  object-fit: contain;
+  background: #fff;
+}
+@media (max-width: 900px) {
+  .eventos-imagenes.eventos-imagenes--ajustada img {
+    max-width: 98vw;
+    height: auto;
+    margin: 8px 0 14px 0;
+  }
 }
 .volver-centro {
   display: flex;
