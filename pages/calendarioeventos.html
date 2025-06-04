@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Eventos</title>
+    <link rel="stylesheet" href="../assets/css/miperfil.css">
+    <link rel="stylesheet" href="../assets/css/calendarioeventos.css">
+    <link rel="icon" href="../assets/images/icon.png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <header class="header header--dark">
+        <div class="header__container">
+            <h1 class="header__logo">Calendario de Eventos</h1>
+            <nav class="header__nav">
+                <ul class="nav__list" id="menuList">
+                    <li class="nav__item menu-hamburguesa">
+                        <a href="#" class="nav__link" id="hamburgerBtn">☰</a>
+                        <ul class="dropdown-menu" id="dropdownMenu" style="display:none;">
+                            <li><a href="calendarioeventos.html" class="nav__link">Calendario de eventos</a></li>
+                            <li><a href="misinscripciones.html" class="nav__link">Mis Inscripciones</a></li>
+                            <li><a href="historialeventos.html" class="nav__link">Historial de Eventos</a></li>
+                            <li><a href="proximoseventos.html" class="nav__link">Próximos Eventos</a></li>
+                            <li><a href="galeria.html" class="nav__link">Galería</a></li>
+                            <li><a href="certificados.html" class="nav__link">Certificados</a></li>
+                            <li><a href="#" class="nav__link" id="logoutBtn">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="calendar-section calendar-section--ajustada">
+        <h2 class="title_myprofile">Calendario de Eventos Escolares</h2>
+        <table class="almanaque-table">
+            <thead>
+                <tr>
+                    <th>Evento</th>
+                    <th>Fecha</th>
+                    <th>Imagen</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Torneo de Fútbol</td>
+                    <td>23/06/2025</td>
+                    <td><img src="../assets/images/CONCURSO 1.jpg" alt="Fútbol" class="almanaque-img"></td>
+                    <td><button class="btn-registrar-evento" onclick="registrarAlmanaque('Torneo de Fútbol')">Registrarse</button></td>
+                </tr>
+                <tr>
+                    <td>Torneo de Volleyball</td>
+                    <td>25/06/2025</td>
+                    <td><img src="../assets/images/Voleyball portada.jpg" alt="Volleyball" class="almanaque-img"></td>
+                    <td><button class="btn-registrar-evento" onclick="registrarAlmanaque('Torneo de Volleyball')">Registrarse</button></td>
+                </tr>
+                <tr>
+                    <td>Nudos Mágicos</td>
+                    <td>07/06/2025</td>
+                    <td><img src="../assets/images/nudosmajicos1.jpg" alt="Nudos Mágicos" class="almanaque-img"></td>
+                    <td><button class="btn-registrar-evento" onclick="registrarAlmanaque('Nudos Mágicos')">Registrarse</button></td>
+                </tr>
+                <tr>
+                    <td>Moldeando Emociones</td>
+                    <td>18/05/2025</td>
+                    <td><img src="../assets/images/moldeandoemociones1.jpg" alt="Moldeando Emociones" class="almanaque-img"></td>
+                    <td><button class="btn-registrar-evento" onclick="registrarAlmanaque('Moldeando Emociones')">Registrarse</button></td>
+                </tr>
+                <tr>
+                    <td>Coloreando Sueños</td>
+                    <td>15/06/2025</td>
+                    <td><img src="../assets/images/coloreandosueños1.jpg" alt="Coloreando Sueños" class="almanaque-img"></td>
+                    <td><button class="btn-registrar-evento" onclick="registrarAlmanaque('Coloreando Sueños')">Registrarse</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        
+        <p class="color-texto">¡Consulta aquí todos los eventos escolares programados y regístrate fácilmente desde el almanaque!</p>
+        <div class="volver-centro"><a href="miperfil.html" class="btn-volver">Volver a mi perfil</a></div>
+    </main>
+    <div id="toast" style="display:none;position:fixed;bottom:32px;left:50%;transform:translateX(-50%);background:#c423d9;color:#fff;padding:14px 32px;border-radius:30px;font-weight:600;box-shadow:0 2px 8px #c423d9;z-index:9999;font-size:1.08rem;transition:opacity 0.3s;opacity:0;">¡Te has registrado exitosamente!</div>
+<script src="/assets/script.js"></script>
+
+</body>
+</html>

@@ -36,9 +36,24 @@
     <header class="header header--dark">
         <div class="header__container">
             <h1 class="header__logo">Mi perfil 👤</h1>
+            <form class="search-bar" id="mainSearchForm" onsubmit="buscarEventos(event)">
+                <input type="text" id="mainSearchInput" placeholder="Buscar eventos, inscripciones..." aria-label="Buscar eventos">
+                <button type="submit">🔍</button>
+            </form>
             <nav class="header__nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link">☰</a></li>
+                <ul class="nav__list" id="menuList">
+                    <li class="nav__item menu-hamburguesa">
+                        <a href="#" class="nav__link" id="hamburgerBtn">☰</a>
+                        <ul class="dropdown-menu" id="dropdownMenu" style="display:none;">
+                            <li><a href="calendarioeventos.html" class="nav__link">Calendario de eventos</a></li>
+                            <li><a href="misinscripciones.html" class="nav__link">Mis Inscripciones</a></li>
+                            <li><a href="historialeventos.html" class="nav__link">Historial de Eventos</a></li>
+                            <li><a href="proximoseventos.html" class="nav__link">Próximos Eventos</a></li>
+                            <li><a href="galeria.html" class="nav__link">Galería</a></li>
+                            <li><a href="certificados.html" class="nav__link">Certificados</a></li>
+                            <li><a href="#" class="nav__link" id="logoutBtn">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -60,25 +75,12 @@
         </div>
     </section>
 
-    <!-- Script para carrusel automático -->
-    <script>
-        const carousel = document.getElementById('autoCarousel');
-        const items = carousel.querySelectorAll('.carousel-item');
-        let index = 0;
-        function autoScrollCarousel() {
-            index = (index + 1) % items.length;
-            carousel.scrollTo({
-                left: items[index].offsetLeft,
-                behavior: 'smooth'
-            });
-        }
-        setInterval(autoScrollCarousel, 4000);
-    </script>
+  
 
     <!-- Sección de tarjetas -->
     <br>
     <section>
-        <h2 class="title_myprofile">EVENTOS</h2>
+        <h2 class="title_myprofile">Eventos realizados</h2>
         <div class="cards-container">
 
             <div class="card">
@@ -152,6 +154,41 @@
         </div>
     </section>
 
+    <section id="infoSection" class="info-section" style="display:none;"></section>
+
+    
+
+    <!-- Sección de reseñas de eventos -->
+    <section>
+        <div class="reviews-container">
+            <div class="review-card">
+                <div class="review-title">Coloreando Sueños</div>
+                <div class="review-stars">★★★★★</div>
+                <div class="review-text">“Un evento maravilloso, los niños disfrutaron mucho y aprendieron a expresarse con colores.”</div>
+            </div>
+            <div class="review-card">
+                <div class="review-title">Nudos Mágicos</div>
+                <div class="review-stars">★★★★☆</div>
+                <div class="review-text">“Muy entretenido y educativo, aunque me hubiera gustado más tiempo para practicar.”</div>
+            </div>
+            <div class="review-card">
+                <div class="review-title">Moldeando Emociones</div>
+                <div class="review-stars">★★★☆☆</div>
+                <div class="review-text">“Interesante y creativo, pero algunos materiales faltaron. Aun así, lo recomiendo.”</div>
+            </div>
+            <div class="review-card">
+                <div class="review-title">Torneo de Fútbol</div>
+                <div class="review-stars">★★★★★</div>
+                <div class="review-text">“Gran organización y ambiente familiar. ¡Esperamos el próximo torneo!”</div>
+            </div>
+            <div class="review-card">
+                <div class="review-title">Torneo de Volleyball</div>
+                <div class="review-stars">★★★★☆</div>
+                <div class="review-text">“Excelente competencia, aunque el clima no ayudó mucho. ¡Muy divertido!”</div>
+            </div>
+        </div>
+    </section>
+<script src="../assets/script.js"></script>
 </body>
 
 </html>

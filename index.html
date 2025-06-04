@@ -52,21 +52,6 @@
         </div>
     </section>
 
-    <!-- Script para carrusel automático -->
-    <script>
-        const carousel = document.getElementById('autoCarousel');
-        const items = carousel.querySelectorAll('.carousel-item');
-        let index = 0;
-        function autoScrollCarousel() {
-            index = (index + 1) % items.length;
-            carousel.scrollTo({
-                left: items[index].offsetLeft,
-                behavior: 'smooth'
-            });
-        }
-        setInterval(autoScrollCarousel, 4000);
-    </script>
-    
     <!-- Sección de contacto -->
     <section class="cta">
         <div class="cta__container">
@@ -98,12 +83,6 @@
         </a>
     </div>
 </div>
-<script>
-    function toggleSubmenu() {
-        const submenu = document.getElementById("submenu");
-        submenu.classList.toggle("active");
-    }
-</script>
 
     <!-- Footer -->
     <footer class="footer">
@@ -139,8 +118,7 @@
             <p>&copy; 2025 Schoolmeet. Todos los derechos reservados.</p>
         </div>
     </footer>
-
-
+    <script src="assets/script.js"></script>
 </body>
 
 </html>

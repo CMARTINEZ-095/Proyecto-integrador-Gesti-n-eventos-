@@ -216,3 +216,225 @@ text-align: center;
 .card:hover .back {
   transform: perspective(600px) rotateY(360deg);
 }
+
+/* Calendario de eventos */
+.calendar-section {
+  margin: 40px auto 0 auto;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 30px 20px;
+}
+#calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 20px;
+}
+.evento-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f3eaff;
+  border-radius: 8px;
+  padding: 16px 20px;
+  box-shadow: 0 1px 4px rgba(87,10,146,0.07);
+  font-size: 1.1rem;
+}
+.evento-item strong {
+  color: #570a92;
+}
+.evento-item button {
+  background: #c423d9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.evento-item button:hover {
+  background: #570a92;
+}
+
+
+/* --- NUEVO ESTILO BARRA DE MENÚ Y HAMBURGUESA (GLASSMORPHISM) --- */
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  background: #1a0033;
+  border-bottom: 3px solid #c423d9;
+  min-height: 48px;
+  box-shadow: 0 8px 32px 0 rgba(87,10,146,0.10);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: min-height 0.2s, padding 0.2s;
+}
+.header__logo {
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 18px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #f3eaff;
+  border-radius: 30px;
+  padding: 4px 12px;
+  margin-right: 30px;
+  min-width: 400px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 1px 4px rgba(87,10,146,0.07);
+  border: none;
+}
+.search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
+  padding: 6px 8px;
+  width: 100%;
+  color: #570a92;
+}
+.search-bar button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #570a92;
+  margin-left: 6px;
+  transition: color 0.2s;
+}
+.search-bar button:hover {
+  color: #c423d9;
+}
+
+.menu-hamburguesa > .nav__link#hamburgerBtn {
+  color: #c423d9;
+  font-size: 2.2rem;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  padding: 4px 10px;
+  box-shadow: none;
+  transition: color 0.2s, background 0.2s;
+}
+.menu-hamburguesa > .nav__link#hamburgerBtn:hover,
+.menu-hamburguesa > .nav__link#hamburgerBtn:focus {
+  color: #fff;
+  background: #c423d9;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: #1a0033;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  min-width: 220px;
+  z-index: 100;
+  list-style: none;
+  padding: 10px 0;
+  animation: fadeIn 0.2s;
+  border: none;
+}
+.dropdown-menu a {
+  display: block;
+  padding: 12px 24px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.dropdown-menu a:hover {
+  background: #c423d9;
+  color: #fff;
+}
+.dropdown-search input {
+  background: #f3eaff;
+  color: #1a0033;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 10px;
+  font-size: 1rem;
+  width: 120px;
+  margin-right: 8px;
+}
+.dropdown-search button {
+  color: #c423d9;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.info-section {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(87,10,146,0.08);
+    margin: 30px auto 0 auto;
+    max-width: 700px;
+    padding: 32px 28px;
+    color: #1a0033;
+    font-size: 1.1rem;
+    min-height: 120px;
+    animation: fadeIn 0.4s;
+}
+.info-section h2 { color: #c423d9; margin-bottom: 18px; }
+.info-section ul { margin-left: 18px; margin-bottom: 0; }
+.info-section img { box-shadow: 0 2px 8px rgba(87,10,146,0.10); }
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin: 30px 0 40px 0;
+}
+.review-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(87,10,146,0.10);
+  padding: 22px 28px 18px 28px;
+  max-width: 320px;
+  min-width: 220px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.review-title {
+  font-weight: bold;
+  color: #c423d9;
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+.review-stars {
+  font-size: 1.4rem;
+  color: #FFD700;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+  text-shadow: 0 1px 2px #c423d9;
+}
+.review-text {
+  color: #570a92;
+  font-size: 1rem;
+  text-align: center;
+}
