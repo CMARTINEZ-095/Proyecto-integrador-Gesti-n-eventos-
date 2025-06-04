@@ -187,6 +187,72 @@
                 <div class="review-text">“Excelente competencia, aunque el clima no ayudó mucho. ¡Muy divertido!”</div>
             </div>
         </div>
+
+        <!-- Apartado para comentar y calificar -->
+        <section class="review-form-section">
+            <h3 class="review-form-title">Deja tu comentario y calificación</h3>
+            <form class="review-form" id="reviewForm">
+                <label for="reviewStars">Calificación:</label>
+                <div class="review-stars-input" id="reviewStars">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <label for="reviewComment">Comentario:</label>
+                <textarea id="reviewComment" class="review-form-textarea" rows="3" maxlength="250" placeholder="Escribe tu opinión..." required></textarea>
+                <button type="submit" class="review-form-btn">Enviar</button>
+                <div id="reviewFormMsg" class="review-form-msg"></div>
+            </form>
+        </section>
+        <br>
+        <br>
+        
+
+        <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__info">
+                <h2 class="footer__logo">Schoolmeet</h2>
+                <p class="footer__text">Ofrecemos una gestión de eventos innovadora para ayudar a gestionar lo que
+                    tengas en mente y destaques en el mercado actual.</p>
+            </div>
+
+            <div>
+                <div class="footer__social">
+                    <h3 class="footer__heading">Nuestras redes sociales</h3>
+                    <div class="footer__social-buttons" style="display:flex;gap:18px;align-items:center;">
+                        <a href="https://www.tiktok.com/" target="_blank" class="footer__social-btn" title="TikTok">
+                            <img src="../assets/images/icono_redessociales.png" alt="TikTok" style="width:32px;height:32px;object-fit:contain;">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-btn" title="Instagram">
+                            <img src="../assets/images/icono_instagram.png" alt="Instagram" style="width:32px;height:32px;object-fit:contain;">
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-btn" title="Facebook">
+                            <img src="../assets/images/icono_facebook.png" alt="Facebook" style="width:32px;height:32px;object-fit:contain;">
+                        </a>
+                        <a href="https://wa.me/" target="_blank" class="footer__social-btn" title="WhatsApp">
+                            <img src="../assets/images/whatsapp_icon.png" alt="WhatsApp" style="width:32px;height:32px;object-fit:contain;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__contact">
+                <h3 class="footer__heading">Contacto</h3>
+                <address>
+                    <p>Calle Principal Avenida 14 #68-23</p>
+                    <p>Medellín, Colombia</p>
+                    <p>Email: soporte@schoolmeet.com</p>
+                    <p>Teléfono: 444 44 44</p>
+                </address>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2025 Schoolmeet. Todos los derechos reservados.</p>
+        </div>
+    </footer>
     </section>
 <script src="../assets/script.js"></script>
 </body>

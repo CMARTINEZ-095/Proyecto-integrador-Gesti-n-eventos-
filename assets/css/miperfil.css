@@ -438,3 +438,74 @@ text-align: center;
   font-size: 1rem;
   text-align: center;
 }
+
+/* Apartado de reseñas y calificación */
+.review-form-section {
+  background: rgba(255,255,255,0.85);
+  border-radius: 18px;
+  box-shadow: 0 2px 12px #c423d93a;
+  max-width: 480px;
+  margin: 36px auto 0 auto;
+  padding: 28px 28px 20px 28px;
+  text-align: center;
+}
+.review-form-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #c423d9;
+  margin-bottom: 18px;
+}
+.review-form label {
+  display: block;
+  margin: 10px 0 4px 0;
+  font-weight: 500;
+  color: #333;
+}
+.review-stars-input {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.review-stars-input .star {
+  color: #bbb;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+.review-stars-input .star.active,
+.review-stars-input .star:hover,
+.review-stars-input .star.active ~ .star {
+  color: #FFD700;
+}
+.review-form-textarea {
+  width: 100%;
+  min-height: 60px;
+  border-radius: 8px;
+  border: 1px solid #c423d9;
+  padding: 8px;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  resize: vertical;
+}
+.review-form-btn {
+  background: #c423d9;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 28px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 6px;
+}
+.review-form-btn:hover {
+  background: #a01bb3;
+}
+.review-form-msg {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+}
