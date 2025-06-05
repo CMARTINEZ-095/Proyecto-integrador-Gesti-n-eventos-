@@ -153,61 +153,72 @@ document.addEventListener('DOMContentLoaded', function() {
         if(a.textContent.includes('Certificados')) a.onclick = function(e){e.preventDefault();mostrarInfo('certificados');};
     });
 
-    // Notificacion de registro
-    function registrarAlmanaque(nombre) {
-      mostrarToast('Te has registrado al evento: ' + nombre);
+});
+
+// Toast para registro de eventos en calendarioeventos.html
+window.mostrarToast = function(mensaje, color = '#c423d9', animacion = true) {
+    var toast = document.getElementById('toast');
+    if (!toast) return;
+    toast.textContent = mensaje;
+    toast.style.display = 'block';
+    toast.style.opacity = '1';
+    toast.style.background = color;
+    if (animacion) {
+        toast.style.transform = 'translateX(-50%) scale(1.08)';
+        toast.style.transition = 'opacity 0.3s, transform 0.3s';
+        setTimeout(function() {
+            toast.style.transform = 'translateX(-50%) scale(1)';
+        }, 100);
     }
-    function mostrarToast(mensaje) {
-      var toast = document.getElementById('toast');
-      toast.textContent = mensaje;
-      toast.style.display = 'block';
-      toast.style.opacity = '1';
-      setTimeout(function() {
+    setTimeout(function() {
         toast.style.opacity = '0';
         setTimeout(function(){ toast.style.display = 'none'; }, 400);
-      }, 2200);
-    }
+    }, 2200);
+};
+window.registrarAlmanaque = function(nombre) {
+    // Color verde para éxito de registro
+    window.mostrarToast('Te has registrado al evento: ' + nombre, '#1bc47d', true);
+};
 
-    // Interacción de estrellas y envío de comentario para reseñas
-    // Interacción de estrellas y envío de comentario para reseñas
-    const stars = document.querySelectorAll('.review-stars-input .star');
-    let rating = 0;
-    if (stars.length > 0) {
-        stars.forEach(star => {
-            star.addEventListener('mouseenter', function() {
-                const val = parseInt(this.getAttribute('data-value'));
-                stars.forEach((s, i) => s.classList.toggle('active', i < val));
-            });
-            star.addEventListener('mouseleave', function() {
-                stars.forEach((s, i) => s.classList.toggle('active', i < rating));
-            });
-            star.addEventListener('click', function() {
-                rating = parseInt(this.getAttribute('data-value'));
-                stars.forEach((s, i) => s.classList.toggle('active', i < rating));
-            });
+// Interacción de estrellas y envío de comentario para reseñas
+// Interacción de estrellas y envío de comentario para reseñas
+const stars = document.querySelectorAll('.review-stars-input .star');
+let rating = 0;
+if (stars.length > 0) {
+    stars.forEach(star => {
+        star.addEventListener('mouseenter', function() {
+            const val = parseInt(this.getAttribute('data-value'));
+            stars.forEach((s, i) => s.classList.toggle('active', i < val));
         });
-        var reviewForm = document.getElementById('reviewForm');
-        if (reviewForm) {
-            reviewForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                const comment = document.getElementById('reviewComment').value.trim();
-                const msg = document.getElementById('reviewFormMsg');
-                if (rating === 0) {
-                    msg.textContent = 'Por favor selecciona una calificación.';
-                    msg.style.color = '#c423d9';
-                    return;
-                }
-                if (comment.length < 5) {
-                    msg.textContent = 'El comentario es muy corto.';
-                    msg.style.color = '#c423d9';
-                    return;
-                }
-                msg.textContent = '¡Gracias por tu reseña!';
-                msg.style.color = '#1bc47d';
-                this.reset();
-                stars.forEach(s => s.classList.remove('active'));
-                rating = 0;
-            });
-        }
+        star.addEventListener('mouseleave', function() {
+            stars.forEach((s, i) => s.classList.toggle('active', i < rating));
+        });
+        star.addEventListener('click', function() {
+            rating = parseInt(this.getAttribute('data-value'));
+            stars.forEach((s, i) => s.classList.toggle('active', i < rating));
+        });
+    });
+    var reviewForm = document.getElementById('reviewForm');
+    if (reviewForm) {
+        reviewForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const comment = document.getElementById('reviewComment').value.trim();
+            const msg = document.getElementById('reviewFormMsg');
+            if (rating === 0) {
+                msg.textContent = 'Por favor selecciona una calificación.';
+                msg.style.color = '#c423d9';
+                return;
+            }
+            if (comment.length < 5) {
+                msg.textContent = 'El comentario es muy corto.';
+                msg.style.color = '#c423d9';
+                return;
+            }
+            msg.textContent = '¡Gracias por tu reseña!';
+            msg.style.color = '#1bc47d';
+            this.reset();
+            stars.forEach(s => s.classList.remove('active'));
+            rating = 0;
+        });
     }
-});
+}
